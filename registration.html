@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='css1/js-form-validation.css' type='text/css' />
+<script src="js1/sample-registration-form-validation.js"></script>
+</head>
+<body onload="document.registration.fname.focus();">
+<h1>Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='registration' action="insert.php" onSubmit="return formValidation();">
+<ul>
+<!--<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="40" /></li>-->
+<li><label for="fname">First Name:</label></li>
+<li><input type="text" name="fname" size="40" required/></li>
+<li><label for="lname">Last Name:</label></li>
+<li><input type="text" name="lname" size="40" required/></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="40" required/></li>
+
+
+<li><label for="phone">Phone:</label></li>
+<li><input type="text" name="phone" size="40" required/></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="40" required/></li>
+
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="gender" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="gender" value="Female" /><span>Female</span></li>
+<li><input type="radio" name="gender" value="Other" /><span>Other</span></li>
+
+
+<li><label id="date">DOB:</label></li>
+<li><input type="date" name="date" max="2019-12-6"></li>
+
+
+<li><label for="apartment">Apartment number:</label></li>
+<li><input type="text" name="apartment" size="40" /></li>
+<li><label for="Street">Street:</label></li>
+<li><input type="text" name="Street" size="40" /></li>
+<li><label for="block">Block:</label></li>
+<li><select name="block">
+<option selected="" value="Default">(Please select a block)</option>
+<option value="1">14th avenue and 75th street and 18th avenue and 65th street</option>
+<option value="2">18th avenue and 65th street and 20th avenue and 75th street</option>
+<option value="3">3rd president and court street and Henry street and Union street</option>
+<option value="4">union street and smith street and baltic street and court street</option>
+<option value="5">union avenue and grand street and Flushing avenue and humboldt street</option>
+</select></li>
+
+<li><label for="block">Neighborhood:</label></li>
+<li><select name="neighborhood">
+<option selected="" value="Default" >(Please select a neighborhood)</option>
+<option value="1">bensonhurst</option>
+<option value="2">carroll gardens</option>
+<option value="3">coney island</option>
+<option value="4">williamsburg</option>
+<option value="5">park slope</option>
+</select></li>
+
+<li><label for="state">State:</label></li>
+<li><select name="state">
+<option selected="" value="Default">(Please select a State)</option>
+<option value="NY">New York</option>
+<option value="NJ">New Jersey</option>
+</select></li>
+
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<!--<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>-->
+<option value="AD">USA</option>
+</select></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" size="40"></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<li><button type="submit"  value="Submit">Submit</button></li>
+</ul>
+</form>
+
+</body>
+</html>
